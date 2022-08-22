@@ -50,13 +50,7 @@ class CountGenderStrategy < StudentStrategy
   end
 
   def execute(array)
-    result = 0
-    array.each do |student|
-      if student.gender == @gender
-        result += 1
-      end
-    end
-    result
+    array.count { |student| student.gender == @gender }
   end
 
 end
@@ -65,11 +59,7 @@ class ComputeAverageGPAStrategy < StudentStrategy
 
   def execute(array)
     return nil if array.empty?
-    gpa_sum = 0
-    array.each do |student|
-      gpa_sum += student.gpa
-    end
-    gpa_sum / array.length
+    array.sum { |student| student.gpa } / array.length
   end
 
 end
@@ -78,13 +68,7 @@ class BestGPAStrategy < StudentStrategy
 
   def execute(array)
     return nil if array.empty?
-    best_student = array[0]
-    array.each do |student|
-      if student.gpa > best_student.gpa
-        best_student = student
-      end
-    end
-    best_student.name
+    (array.max_by { |student| student.gpa }).name
   end
 
 end
