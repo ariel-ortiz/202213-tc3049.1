@@ -60,3 +60,31 @@ class CountGenderStrategy < StudentStrategy
   end
 
 end
+
+class ComputeAverageGPAStrategy < StudentStrategy
+
+  def execute(array)
+    return nil if array.empty?
+    gpa_sum = 0
+    array.each do |student|
+      gpa_sum += student.gpa
+    end
+    gpa_sum / array.length
+  end
+
+end
+
+class BestGPAStrategy < StudentStrategy
+
+  def execute(array)
+    return nil if array.empty?
+    best_student = array[0]
+    array.each do |student|
+      if student.gpa > best_student.gpa
+        best_student = student
+      end
+    end
+    best_student.name
+  end
+
+end
