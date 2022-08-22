@@ -42,3 +42,21 @@ class Course
   end
 
 end
+
+class CountGenderStrategy < StudentStrategy
+
+  def initialize(gender)
+    @gender = gender
+  end
+
+  def execute(array)
+    result = 0
+    array.each do |student|
+      if student.gender == @gender
+        result += 1
+      end
+    end
+    result
+  end
+
+end

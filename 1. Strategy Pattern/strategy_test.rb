@@ -29,6 +29,7 @@ class StrategyTest < Minitest::Test
   end
 
   def test_compute_average_gpa_strategy
+    skip
     @a.strategy = ComputeAverageGPAStrategy.new
     @b.strategy = ComputeAverageGPAStrategy.new
     assert_nil(@a.execute)
@@ -36,6 +37,7 @@ class StrategyTest < Minitest::Test
   end
 
   def test_best_gpa_strategy
+    skip
     @a.strategy = BestGPAStrategy.new
     @b.strategy = BestGPAStrategy.new
     assert_nil(@a.execute)
