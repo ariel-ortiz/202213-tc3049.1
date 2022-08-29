@@ -1,0 +1,15 @@
+= Class Exercise: Refactorings
+
+Review carefully the contents of the `student.rb` and `student_test.rb` files. One by one, perform the following refactorings as described in [FIELDS]:
+
+["lowerroman"]
+
+. https://learning.oreilly.com/library/view/refactoring-ruby-edition/9780321603968/ch08.html#page_217[Replace Magic Number with Symbolic Constant]
+. https://learning.oreilly.com/library/view/refactoring-ruby-edition/9780321603968/ch10.html#page_298Rename[Rename Method]
+. https://learning.oreilly.com/library/view/refactoring-ruby-edition/9780321603968/ch06.html#page_121[Split Temporary Variable]
+. https://learning.oreilly.com/library/view/refactoring-ruby-edition/9780321603968/ch06.html#page_102[Extract Method]
+. https://learning.oreilly.com/library/view/refactoring-ruby-edition/9780321603968/ch10.html#page_327[Hide Method]
+. https://learning.oreilly.com/library/view/refactoring-ruby-edition/9780321603968/ch06.html#page_117[Introduce Explaining Variable]
+. https://learning.oreilly.com/library/view/refactoring-ruby-edition/9780321603968/ch10.html#page_332[Replace Error Code with Exception]
+. https://learning.oreilly.com/library/view/refactoring-ruby-edition/9780321603968/ch06.html#page_142[Introduce Named Parameter]
+. https://learning.oreilly.com/library/view/refactoring-ruby-edition/9780321603968/ch06.html#page_133[Replace Loop with Collection Closure Method]
