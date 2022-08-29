@@ -17,7 +17,7 @@ class Student
     self
   end
 
-  def meh
+  def display_info
     # Display Personal Information
     puts "Name: #{ @name } ID: #{ @id }"
     puts "Anual income: #{ @anual_income }"
