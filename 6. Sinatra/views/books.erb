@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Books</title>
+  </head>
+  <body>
+    <h1>Books</h1>
+    <p>
+      <ol>
+        <% @info.each do |book| %>
+        <li>
+          <em><%= book['Title'] %></em>, <%= book['Author'] %>
+          (<%= book['Year'] %>)
+        </li>
+        <% end %>
+      </ol>
+    </p>
+  </body>
+</html>
